@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import { Provider } from "react-redux";
 import { wrapper } from "../Store/store";
 import { useRouter } from "next/router";
-function MyApp({ Component, ...rest }) {
+function MyApp({ Component, pageProps }) {
   useEffect(() => {
     AOS.init();
     AOS.init({
@@ -37,15 +37,13 @@ function MyApp({ Component, ...rest }) {
   } else {
     navbar = "";
   }
-  const { store, props } = wrapper.useWrappedStore(rest);
+
   return (
     <>
-      <Provider store={store}>
-        {navbar}
-        <Component {...props.pageProps} />
-      </Provider>
+      {navbar}
+      <Component {...pageProps} />
     </>
   );
 }
 
-export default MyApp;
+export default wrapper.withRedux(MyApp);
