@@ -11,6 +11,7 @@ function Footer() {
     <div className="h-[30%] bg-neutral-900 w-full py-5 text-white">
       <div className="flex text-2xl space-x-7 justify-center items-center">
         <a
+          rel="noreferrer"
           aria-label="GitHub"
           href="https://github.com/Kourosh-Hajivand"
           target={"_blank"}
@@ -18,6 +19,7 @@ function Footer() {
           <FaGithub />
         </a>
         <a
+          rel="noreferrer"
           aria-label="Whatsapp"
           href="https://wa.me/09038953557"
           target={"_blank"}
@@ -25,6 +27,7 @@ function Footer() {
           <FaWhatsapp />
         </a>
         <a
+          rel="noreferrer"
           aria-label="Instagram"
           href="https://www.instagram.com/_kourosh.h/"
           target={"_blank"}
@@ -32,6 +35,7 @@ function Footer() {
           <FaInstagram />
         </a>
         <a
+          rel="noreferrer"
           aria-label="Telegram"
           href="https://t.me/kourosh_H"
           target={"_blank"}

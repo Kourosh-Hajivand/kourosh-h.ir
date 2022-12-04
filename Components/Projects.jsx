@@ -75,6 +75,7 @@ function Projects() {
                   <Link
                     href={`/${item.Projectid}`}
                     target="_blank"
+                    rel="noreferrer"
                     aria-label={item.Titel}
                   >
                     <button

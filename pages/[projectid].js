@@ -12,7 +12,7 @@ import { useRouter } from "next/router";
 import { getCookie, setCookie } from "cookies-next";
 import { changelan } from "../Store/LanguageReducer";
 
-function projectid(props) {
+function Projectid(props) {
   const { loadedProject, Language } = props;
   const router = useRouter();
   const changelan = () => {
@@ -210,4 +210,4 @@ export const getServerSideProps = wrapper.getServerSideProps(
 //   };
 // }
 
-export default projectid;
+export default Projectid;

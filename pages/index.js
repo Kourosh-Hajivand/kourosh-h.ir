@@ -26,7 +26,7 @@ export default function Home() {
     } else {
       return;
     }
-  }, []);
+  });
   return (
     <div>
       <main className="font-Rubik">
