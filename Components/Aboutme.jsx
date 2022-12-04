@@ -10,7 +10,12 @@ function Aboutme() {
   return (
     <div id="AboutMe" className="relative px-5 md:px-16  py-16 lg:py-32">
       <div className="w-[100%] h-[100px] top-[-100px] z-10  left-0 overflow-hidden  absolute ">
-        <Image src={HeroButtonBackground} priority={true} alt="" />
+        <Image
+          src={HeroButtonBackground}
+          priority={true}
+          placeholder={"blur"}
+          alt=""
+        />
       </div>
       <div className="grid  lg:grid-cols-2 max-w-[1240px] gap-5 mx-auto justify-center items-center">
         <div className="w-[100%] lg:w-[70%] mx-auto relative Border before:hidden lg:before:block p-5">

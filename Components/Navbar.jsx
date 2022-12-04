@@ -69,6 +69,8 @@ function Navbar() {
           width={55}
           height={100}
           alt=""
+          priority={true}
+          placeholder={"blur"}
           sizes="max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,"
         />
