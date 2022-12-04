@@ -10,7 +10,6 @@ import Resume from "../Components/Resume";
 import { ChangeData } from "../Store/DataReducer";
 import Data from "../Data/Info";
 import { changelan } from "../Store/LanguageReducer";
-import { useRouter } from "next/router";
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -29,6 +28,9 @@ export default function Home() {
   });
   return (
     <div>
+      <Head>
+        <title>Kourosh H</title>
+      </Head>
       <main className="font-Rubik">
         <section>
           <Hero />

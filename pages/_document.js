@@ -3,7 +3,6 @@ export default function Document() {
   return (
     <Html lang="En">
       <Head>
-        <title>Kourosh H</title>
         <meta name="titel" content="Kourosh H" />
         <meta name="titel" content="فرانت اند دولوپر" />
         <meta property="og:site_name" content="Kourosh H" />
