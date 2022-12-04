@@ -1,0 +1,300 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: Rubik;
+  src: url("../public/Fonts/Rubik-Regular.woff2");
+}
+@font-face {
+  font-family: Rubik-md;
+  src: url("../public/Fonts/Rubik-Medium.woff2");
+}
+@font-face {
+  font-family: Rubik-bold;
+  src: url("../public/Fonts/Rubik-Bold.woff2");
+}
+@font-face {
+  font-family: Rubik-black;
+  src: url("../public/Fonts/Rubik-Black.woff2");
+}
+@font-face {
+  font-family: Rubik-light;
+  src: url("../public/Fonts/Rubik-Light.woff2");
+}
+@font-face {
+  font-family: Rubik-semibold;
+  src: url("../public/Fonts/Rubik-SemiBold.woff2");
+}
+@font-face {
+  font-family: Iransans-MD;
+  src: url("../public//Fonts/IRANSansXMedium.woff2");
+}
+@font-face {
+  font-family: Iransans-Bold;
+
+  src: url("../public/Fonts/IRANSansXBold.woff2");
+}
+@font-face {
+  font-family: Iransans-Black;
+
+  src: url("../public/Fonts/IRANSansXBlack.woff2");
+}
+@font-face {
+  font-family: Iransans-thin;
+
+  src: url("../public/Fonts/IRANSansXThin.woff2");
+}
+@layer components {
+  .DownloadLines {
+    @apply w-[2px] h-[8px]  absolute rounded;
+  }
+  .Square {
+    @apply inline-block w-2 h-2 bg-neutral-800 z-10 rotate-45;
+  }
+  .Skill {
+    @apply duration-700 absolute top-0 left-0 bg-gradient-to-r from-neutral-600 to-zinc-800 h-[100%] rounded-full Progresbar;
+  }
+  .bgSkill {
+    @apply my-5 w-full h-6 bg-slate-100 bg-gradient-to-r from-neutral-100 border-4 border-zinc-100  to-neutral-200 rounded-full relative;
+  }
+  .nextjs {
+    @apply bg-neutral-900 px-10;
+  }
+  .React {
+    @apply bg-blue-400;
+  }
+  .js {
+    @apply bg-yellow-500;
+  }
+  .Tailwind {
+    @apply bg-cyan-600;
+  }
+  .Html {
+    @apply bg-orange-500;
+  }
+  .Css {
+    @apply bg-blue-500;
+  }
+  .Bootstrap {
+    @apply bg-indigo-500;
+  }
+  .router {
+    @apply bg-neutral-800;
+  }
+}
+.imagewraper {
+  height: 100vh;
+  width: 100%;
+  clip-path: inset(0 0 0 0);
+  position: relative;
+}
+
+.puring,
+.react,
+.tailwind {
+  width: 30%;
+}
+.tailwind.aos-animate {
+  width: 90%;
+}
+.react.aos-animate {
+  width: 80%;
+}
+.puring.aos-animate {
+  width: 75%;
+}
+.Progresbar::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 5px solid #333;
+  position: absolute;
+  top: -12px;
+  right: 20px;
+}
+.Progresbar::after {
+  content: attr(data-value);
+  font-size: 12px;
+  color: #eee;
+  text-align: center;
+  position: absolute;
+  padding: 1px 11px 2px;
+  border-radius: 10px;
+  background-color: #333;
+  top: -35px;
+  right: 0;
+}
+.SectionLine::after {
+  content: "";
+  height: 1px;
+  width: 90%;
+  background-color: rgb(232, 232, 232);
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  bottom: -25px;
+}
+.projectcard::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #eee;
+  position: absolute;
+  left: 0;
+  top: 3rem;
+}
+.linenav::after {
+  content: "";
+  width: 30px;
+  height: 1.5px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -17px;
+  opacity: 0;
+  left: calc(50% - 15px);
+  background-color: red;
+  transition: all 0.3s;
+}
+.linenav.active::after {
+  opacity: 1;
+  bottom: -10px;
+}
+.customimage {
+  background-image: url("https://ui-themez.smartinnovates.net/items/buka/img/wave.svg");
+}
+.lines::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 12px;
+  height: 3px;
+  width: 120px;
+  background-image: linear-gradient(to right, #262626, #f5f5f5);
+}
+.lines::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 12px;
+  height: 3px;
+  width: 120px;
+
+  background-image: linear-gradient(to right, #f5f5f5, #262626);
+}
+.Border::before {
+  content: "";
+  width: 90%;
+  position: absolute;
+  top: -50%;
+  bottom: -50%;
+  left: 0;
+  background-image: url("/dots.png");
+  background-repeat: repeat;
+  z-index: -1;
+}
+
+.Border::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50px;
+  left: 55px;
+  bottom: 0;
+  border-radius: 5px;
+  border: 8px solid #eee;
+}
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+}
+.hamburger:hover {
+  opacity: 0.7;
+}
+.hamburger.is-active:hover {
+  opacity: 0.7;
+}
+
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px;
+}
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  width: 40px;
+  height: 4px;
+  /* background-color: black; */
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+.hamburger-inner::before,
+.hamburger-inner::after {
+  content: "";
+  display: block;
+}
+.hamburger-inner::before {
+  top: -10px;
+}
+.hamburger-inner::after {
+  bottom: -10px;
+}
+.hamburger--collapse .hamburger-inner {
+  top: auto;
+  bottom: 0;
+  transition-duration: 0.13s;
+  transition-delay: 0.13s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburger--collapse .hamburger-inner::after {
+  top: -20px;
+  transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
+    opacity 0.1s linear;
+}
+.hamburger--collapse .hamburger-inner::before {
+  transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
+    transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--collapse.is-active .hamburger-inner {
+  transform: translate3d(0, -10px, 0) rotate(-45deg);
+  transition-delay: 0.22s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.hamburger--collapse.is-active .hamburger-inner::after {
+  top: 0;
+  opacity: 0;
+  transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
+    opacity 0.1s 0.22s linear;
+}
+.hamburger--collapse.is-active .hamburger-inner::before {
+  top: 0;
+  transform: rotate(-90deg);
+  transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
+    transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
