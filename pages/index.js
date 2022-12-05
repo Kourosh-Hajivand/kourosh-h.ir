@@ -1,4 +1,4 @@
-import { getCookie, hasCookie } from "cookies-next";
+import { getCookie, hasCookie, setCookie, setCookies } from "cookies-next";
 import Head from "next/head";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
@@ -15,6 +15,7 @@ export default function Home() {
   const dispatch = useDispatch();
   useEffect(() => {
     const Cookie = hasCookie("Languages");
+    setCookie("Languages", "EN");
     const lan = getCookie("Languages");
     if (Cookie && lan === "FA") {
       dispatch(changelan("FA"));

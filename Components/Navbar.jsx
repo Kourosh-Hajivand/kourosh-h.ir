@@ -70,7 +70,7 @@ function Navbar() {
           height={100}
           alt=""
           priority={true}
-          placeholder={"blur"}
+          placeholder={"empty"}
           sizes="max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,"
         />

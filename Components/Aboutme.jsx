@@ -13,7 +13,7 @@ function Aboutme() {
         <Image
           src={HeroButtonBackground}
           priority={true}
-          placeholder={"blur"}
+          placeholder={"empty"}
           alt=""
         />
       </div>
@@ -59,7 +59,8 @@ function Aboutme() {
 
           {/* Progress Bar */}
           <div className="mt-14 space-y-12">
-            <div className="bgSkill">
+            <div className="bgSkill relative">
+              <h1 className="font-RubikSemiBold absolute -top-9">Next.js</h1>
               <div
                 data-aos=""
                 data-aos-offset="00"
@@ -68,11 +69,12 @@ function Aboutme() {
                 data-aos-easing="ease-in-out"
                 data-value="75%"
                 className="Skill puring"
-              >
-                <h1 className="font-RubikSemiBold absolute -top-9">Next.js</h1>
-              </div>
+              ></div>
             </div>
-            <div className="bgSkill">
+            <div className="bgSkill relative">
+              <h1 className="font-RubikSemiBold font-semibold absolute -top-9">
+                React.js , Redux
+              </h1>
               <div
                 data-aos=""
                 data-aos-offset="00"
@@ -81,13 +83,12 @@ function Aboutme() {
                 data-aos-easing="ease-in-out"
                 data-value="80%"
                 className=" Skill react "
-              >
-                <h1 className="font-RubikSemiBold font-semibold absolute -top-9">
-                  React.js , Redux
-                </h1>
-              </div>
+              ></div>
             </div>
-            <div className="bgSkill">
+            <div className="bgSkill relative ">
+              <h1 className="font-RubikSemiBold   absolute -top-8 font-semibold ">
+                Tailwind , Bootstrap
+              </h1>
               <div
                 data-aos=""
                 data-aos-offset="0"
@@ -96,11 +97,7 @@ function Aboutme() {
                 data-aos-easing="ease-in-out"
                 data-value="90%"
                 className="Skill tailwind"
-              >
-                <h1 className="font-RubikSemiBold font-semibold  absolute -top-9">
-                  Tailwind , Bootstrap
-                </h1>
-              </div>
+              ></div>
             </div>
           </div>
           {/* Progress Bar */}
