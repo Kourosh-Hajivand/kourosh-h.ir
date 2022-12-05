@@ -93,7 +93,7 @@ function Aboutme() {
                 data-aos=""
                 data-aos-offset="0"
                 data-aos-delay="50"
-                data-aos-duration="1100"
+                data-aos-duration="500"
                 data-aos-easing="ease-in-out"
                 data-value="90%"
                 className="Skill tailwind"
