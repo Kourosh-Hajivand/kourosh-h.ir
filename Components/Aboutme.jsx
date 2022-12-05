@@ -63,9 +63,9 @@ function Aboutme() {
               <h1 className="font-RubikSemiBold absolute -top-9">Next.js</h1>
               <div
                 data-aos=""
-                data-aos-offset="00"
-                data-aos-delay="0"
-                data-aos-duration="700"
+                data-aos-offset="0"
+                data-aos-delay="50"
+                data-aos-duration="500"
                 data-aos-easing="ease-in-out"
                 data-value="75%"
                 className="Skill puring"
@@ -77,9 +77,9 @@ function Aboutme() {
               </h1>
               <div
                 data-aos=""
-                data-aos-offset="00"
+                data-aos-offset="0"
                 data-aos-delay="50"
-                data-aos-duration="900"
+                data-aos-duration="700"
                 data-aos-easing="ease-in-out"
                 data-value="80%"
                 className=" Skill react "
@@ -93,7 +93,7 @@ function Aboutme() {
                 data-aos=""
                 data-aos-offset="0"
                 data-aos-delay="50"
-                data-aos-duration="500"
+                data-aos-duration="900"
                 data-aos-easing="ease-in-out"
                 data-value="90%"
                 className="Skill tailwind"

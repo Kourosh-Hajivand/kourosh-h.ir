@@ -45,7 +45,7 @@ let info = {
             },
           ],
           SourceCodeLink: "https://github.com/Kourosh-Hajivand/Weather-App",
-          ProjectUrl: "",
+          ProjectUrl: "https://nextjs-weather-app-kourosh-hajivand.vercel.app",
         },
         {
           Titel: "Task App",
@@ -83,7 +83,7 @@ let info = {
           ],
           SourceCodeLink:
             "https://github.com/Kourosh-Hajivand/Task-App-Javascript",
-          ProjectUrl: "",
+          ProjectUrl: "https://task-app-javascript.vercel.app/Index.html",
         },
         {
           Titel: "Online Shop",
@@ -112,7 +112,8 @@ let info = {
           ],
           SourceCodeLink:
             "https://github.com/Kourosh-Hajivand/ShoppingApp-React.js",
-          ProjectUrl: "",
+          ProjectUrl:
+            "https://github.com/Kourosh-Hajivand/ShoppingApp-React.js",
           Demo: "/WheatherApp.jpeg",
         },
       ],
@@ -132,7 +133,7 @@ let info = {
     Aboutme: {
       Titel: "درباره من",
       describ: "برنامه نویس فرانت اند و طراحی سایت",
-      AboutmeText: ` کوروش حاجیوند برنامه نویس فرانت اند از تهران هستم حدود ۲ سال هست که برنامه نویسی فرانت رو به صورت خود آموز یادگرفتم و از منابعی مثل : یوتوب موزیلا و دوره های انلایین استفاده کردم مهارت های من : اچ تی ام ال, سی اس اس, بوت استرپ,تیل ویند, جاوااسکریپت, ریکت جی اس, ریکت روتر, ریداکس,نکست جی اس, گیت, و تمامی کتاب خانه هایی که در فرانت اند استفاده میشوند و همچنین تجربه دیزایین با ایلستریتور و فیگما رو دارم`,
+      AboutmeText: ` کوروش حاجیوند برنامه نویس فرانت اند از تهران هستم حدود ۲ سال هست که برنامه نویسی فرانت رو به صورت خود آموز یادگرفتم و از منابعی مثل : یوتوب موزیلا و دوره های آنلاین استفاده کردم مهارت های من : اچ تی ام ال, سی اس اس, بوت استرپ,تیل ویند, جاوااسکریپت, ریکت جی اس, ریکت روتر, ریداکس,نکست جی اس, گیت, و تمامی کتاب خانه هایی که در فرانت اند استفاده میشوند و همچنین تجربه دیزاین با ایلستریتور و فیگما رو دارم`,
     },
     ProjectPage: {
       ProjectTitel: "پروژه ها",
@@ -163,7 +164,7 @@ let info = {
             },
           ],
           SourceCodeLink: "https://github.com/Kourosh-Hajivand/Weather-App",
-          ProjectUrl: "",
+          ProjectUrl: "https://nextjs-weather-app-kourosh-hajivand.vercel.app",
         },
         {
           Titel: "مدیریت کار ها",
@@ -200,15 +201,15 @@ let info = {
           ],
           SourceCodeLink:
             "https://github.com/Kourosh-Hajivand/Task-App-Javascript",
-          ProjectUrl: "",
+          ProjectUrl: "https://task-app-javascript.vercel.app/Index.html",
         },
         {
-          Titel: "آنلایین شاپ",
+          Titel: "آنلاین شاپ",
           logo: "/Shoping.png",
           Projectid: "OnlineShop",
           Demo: "/TaskAppDark.jpeg",
           DescriptionTitel: "توضیحات",
-          Description: "Weather app For Knowing curent Weather in a Location",
+          Description: "قروشگاه اینترنتی برای سفارش آنلاین محصول",
           usedlanguageTitel: "زبان های استفاده شده",
           usedlanguage: [
             { Titel: "React", color: "React" },
@@ -228,7 +229,8 @@ let info = {
 
           SourceCodeLink:
             "https://github.com/Kourosh-Hajivand/ShoppingApp-React.js",
-          ProjectUrl: "",
+          ProjectUrl:
+            "https://github.com/Kourosh-Hajivand/ShoppingApp-React.js",
         },
       ],
     },

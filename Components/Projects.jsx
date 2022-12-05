@@ -79,7 +79,7 @@ function Projects() {
                     aria-label={item.Titel}
                   >
                     <button
-                      className={`px-8 active:scale-75  duration-300 ease-in rounded-sm  hover:bg-gray-900 hover:text-gray-50 py-2 border-black border ${
+                      className={`px-8 mt-2 active:scale-75  duration-300 ease-in rounded-sm  hover:bg-gray-900 hover:text-gray-50 py-2 border-black border ${
                         lan === "FA" ? "font-IransansMD" : "font-Rubik"
                       }`}
                     >

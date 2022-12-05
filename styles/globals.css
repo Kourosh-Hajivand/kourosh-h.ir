@@ -178,6 +178,7 @@
 }
 .lines::before {
   content: "";
+
   position: absolute;
   left: -10px;
   top: 12px;
