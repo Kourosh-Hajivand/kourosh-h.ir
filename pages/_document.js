@@ -22,8 +22,8 @@ export default function Document() {
       <meta property="og:title" content="Kourosh H" />
       <meta property="og:description" content="Front End Developer" />
       <meta name="theme-color" content="#686868" />
-      <meta name="apple-mobile-web-app-status-bar-style" content="#fffff" />
-      <meta name="apple-mobile-web-app-capable" content="yes"></meta>
+      <meta name="apple-mobile-web-app-status-bar-style" content="#f5f5f5" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="robots" content="index,follow" />
       <link
         rel="shortcut icon"
