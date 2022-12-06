@@ -42,10 +42,10 @@ export default function Document() {
         content="Front end Developer With Next.js React redux React.Router Tailwind Bootstrap Css Html "
       />
       <link rel="apple-touch-icon" href="/Logo-White1.png"></link>
-      <meta name="theme-color" content="#f5f5f5" />
-      <meta name="msapplication-navbutton-color" content="#f5f5f5" />
-      <meta content="#f5f5f5" name="msapplication-navbutton-color" />
-      <meta name="apple-mobile-web-app-status-bar-style" content="#f5f5f5" />
+      <meta name="theme-color" content="#d4d4d4" />
+      <meta name="msapplication-navbutton-color" content="#d4d4d4" />
+      <meta content="#d4d4d4" name="msapplication-navbutton-color" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="#d4d4d4" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="robots" content="index,follow" />
       <link
