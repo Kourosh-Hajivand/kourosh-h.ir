@@ -31,6 +31,10 @@ export default function Home() {
     <div>
       <Head>
         <title>Kourosh H Front End Developer</title>
+        <meta
+          name="google-site-verification"
+          content="88-CJGrz1gfhh7e48oy89RfV22Virswfj5CrG-arL90"
+        />
       </Head>
       <main className="font-Rubik">
         <section>
