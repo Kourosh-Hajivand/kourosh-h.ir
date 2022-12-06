@@ -43,6 +43,8 @@ export default function Document() {
       />
       <link rel="apple-touch-icon" href="/Logo-White1.png"></link>
       <meta name="theme-color" content="#686868" />
+      <meta name="msapplication-navbutton-color" content="#686868" />
+      <meta content="#686868" name="msapplication-navbutton-color" />
       <meta name="apple-mobile-web-app-status-bar-style" content="#f5f5f5" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="robots" content="index,follow" />
