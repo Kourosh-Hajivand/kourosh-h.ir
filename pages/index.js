@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Kourosh H</title>
+        <title>Kourosh H Front End Developer</title>
       </Head>
       <main className="font-Rubik">
         <section>
