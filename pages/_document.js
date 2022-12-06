@@ -5,6 +5,10 @@ export default function Document() {
       <Head />
       <meta name="titel" content="Kourosh H Front End Developer" />
       <meta name="titel" content="فرانت اند دولوپر" />
+      <meta
+        name="google-site-verification"
+        content="88-CJGrz1gfhh7e48oy89RfV22Virswfj5CrG-arL90"
+      />
       <meta property="og:site_name" content="Kourosh H" />
       <meta name="viewport" content="width=device-width,initial-scale=1" />
       <meta name="HandheldFriendly" content="true" />
