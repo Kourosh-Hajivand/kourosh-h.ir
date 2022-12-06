@@ -3,17 +3,20 @@ export default function Document() {
   return (
     <Html lang="En">
       <Head />
-      <meta name="titel" content="Kourosh H" />
+      <meta name="titel" content="Kourosh H Front End Developer" />
       <meta name="titel" content="فرانت اند دولوپر" />
       <meta property="og:site_name" content="Kourosh H" />
       <meta name="viewport" content="width=device-width,initial-scale=1" />
       <meta name="HandheldFriendly" content="true" />
       <meta name="author" content="kourosh Hajivand" />
       <meta name="description" content="برنامه نویس فرانت اند" />
-      <meta name="description" content="Front end Developer" />
+      <meta
+        name="description"
+        content="Front end Developer With Next.js React redux React.Router Tailwind Bootstrap Css Html "
+      />
       <meta
         name="keywords"
-        content="React,react,nextjs,next.js,Tailwind,tailwind,css,Css,html,Html,Front,Front End,Ui,ui,Ux,ux,Developer,kourosh H,kourosh,hajivand,"
+        content="React,react,nextjs,next.js,Tailwind,tailwind,css,Css,html,Html,Front,Front End,Ui,ui,Ux,ux,Developer,Responsive,kourosh H,kourosh,hajivand,"
       />
       <meta
         name="keywords"

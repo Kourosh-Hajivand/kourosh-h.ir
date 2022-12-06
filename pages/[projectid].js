@@ -190,6 +190,11 @@ export const getServerSideProps = wrapper.getServerSideProps(
     const projectid = params.projectid;
     const Project = store.getState().Data.Contetnt.ProjectPage.Projects;
     const FoundedProject = Project.find((item) => item.Projectid === projectid);
+    if (FoundedProject === undefined) {
+      return {
+        notFound: true,
+      };
+    }
     return {
       props: {
         loadedProject: FoundedProject,
