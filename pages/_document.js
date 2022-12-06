@@ -3,6 +3,7 @@ export default function Document() {
   return (
     <Html lang="En">
       <Head />
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="titel" content="Kourosh H Front End Developer" />
       <meta name="titel" content="فرانت اند دولوپر" />
       <meta property="og:site_name" content="Kourosh H" />
