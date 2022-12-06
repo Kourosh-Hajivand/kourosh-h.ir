@@ -54,6 +54,7 @@ export default function Document() {
         type="image/png"
         sizes="16x16"
       ></link>
+
       <body>
         <Main />
         <NextScript />
