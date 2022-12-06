@@ -10,6 +10,7 @@ import Resume from "../Components/Resume";
 import { ChangeData } from "../Store/DataReducer";
 import Data from "../Data/Info";
 import { changelan } from "../Store/LanguageReducer";
+import Script from "next/script";
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -36,6 +37,17 @@ export default function Home() {
           content="88-CJGrz1gfhh7e48oy89RfV22Virswfj5CrG-arL90"
         />
       </Head>
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-XXKW9QKSN4"
+      ></Script>
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`  window.dataLayer = window.dataLayer || []
+             function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+               gtag('config', 'G-XXKW9QKSN4');`}
+      </Script>
+
       <main className="font-Rubik">
         <section>
           <Hero />
