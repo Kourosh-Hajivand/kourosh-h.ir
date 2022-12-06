@@ -25,7 +25,9 @@ function Hero() {
           className="object-cover"
           priority={true}
           placeholder="blur"
-          sizes="100vw"
+          sizes="(max-width: 768px) 100vw,
+          (max-width: 1200px) 50vw,
+          33vw"
           alt="Hero background"
         />
       </div>
@@ -97,6 +99,7 @@ function Hero() {
           duration={500}
           delay={0}
           aria-label="Resume"
+          href="/resume"
         >
           <button className="px-8 py-3 mt-5 border active:scale-75 rounded-sm border-white hover:bg-white hover:text-black duration-300 ease-in">
             Contact Me

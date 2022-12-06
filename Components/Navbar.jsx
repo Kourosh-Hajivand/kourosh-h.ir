@@ -68,7 +68,7 @@ function Navbar() {
           src={logo}
           width={55}
           height={100}
-          alt=""
+          alt="Logo"
           priority={true}
           placeholder={"empty"}
           sizes="max-width: 768px) 100vw,
