@@ -40,6 +40,7 @@ export default function Home() {
       <Script
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-XXKW9QKSN4"
+        strategy="afterInteractive"
       ></Script>
       <Script id="google-analytics" strategy="afterInteractive">
         {`  window.dataLayer = window.dataLayer || []
