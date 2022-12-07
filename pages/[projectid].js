@@ -32,17 +32,6 @@ function Projectid(props) {
         <title>{loadedProject.Titel}</title>
         <meta name="description" content={loadedProject.Description} />
       </Head>
-      <Script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-XXKW9QKSN4"
-        strategy="afterInteractive"
-      ></Script>
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`  window.dataLayer = window.dataLayer || []
-             function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-               gtag('config', 'G-XXKW9QKSN4');`}
-      </Script>
       <div className="w-full bg-gray-100  items-center duration-300 z-50">
         <div className="max-w-[1240px] w-full h-full min-h-screen  mx-auto  py-5 px-6 bg-white shadow-2xl rounded ">
           <div className="flex justify-between ">

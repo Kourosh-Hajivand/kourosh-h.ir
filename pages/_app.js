@@ -3,9 +3,9 @@ import "../styles/globals.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import { Provider } from "react-redux";
 import { wrapper } from "../Store/store";
 import { useRouter } from "next/router";
+import { Analytics } from "@vercel/analytics/react";
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     AOS.init();
@@ -42,6 +42,7 @@ function MyApp({ Component, pageProps }) {
     <>
       {navbar}
       <Component {...pageProps} />
+      <Analytics />
     </>
   );
 }
