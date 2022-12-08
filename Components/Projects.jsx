@@ -13,7 +13,7 @@ function Projects() {
   return (
     <div
       id="Projects"
-      className="px-5  md:px-16  py-28 lg:py-44 bg-neutral-100 w-full  "
+      className="px-5  md:px-16  py-28 lg:py-44 bg-neutral-100 w-full min-h-screen  "
     >
       <div className="max-w-[1240px] text-center mx-auto flex flex-col justify-center items-center">
         <h1

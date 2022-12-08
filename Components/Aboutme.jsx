@@ -8,7 +8,10 @@ function Aboutme() {
   const lan = useSelector((state) => state.Language);
 
   return (
-    <div id="AboutMe" className="relative px-5 md:px-16  py-16 lg:py-32">
+    <div
+      id="AboutMe"
+      className="relative px-5 md:px-16  py-16 lg:py-32 min-h-screen"
+    >
       <div className="w-[100%] h-[100px] top-[-100px] z-10  left-0 overflow-hidden  absolute ">
         <Image
           src={HeroButtonBackground}
