@@ -72,7 +72,7 @@ function Resume() {
         </span>
       </div>
       <div className="grid lg:grid-cols-2 my-7 mx-auto pb-10 gap-5 max-w-[1240px] justify-center items-center">
-        <div className="w-[50%] md:w-[40%] lg:w-[70%] xl:w-[50%]  mx-auto overlay duration-300 ease-in hover:drop-shadow-2xl relative rounded overflow-hidden">
+        <div className="w-[50%] md:w-[40%] lg:w-[70%] xl:w-[50%]  mx-auto overlay duration-300 ease-in shadow-md hover:shadow-lg relative rounded overflow-hidden">
           <div
             onClick={ImagePreviewHandler}
             className=" opacity-0 font-Rubik font-bold   text-white cursor-pointer absolute top-0 left-0 w-full flex justify-center items-center h-full duration-300 ease-in hover:backdrop-blur-lg hover:opacity-100"
@@ -82,7 +82,7 @@ function Resume() {
           <Image src={resume} alt="" />
         </div>
         <div className="grid xl:grid-cols-2  gap-5 text-neutral-50 ">
-          <div className="w-full min-h-[100px] flex flex-col justify-center items-center max-w-[500px] mx-auto bg-cyan-900 shadow-md shadow-cyan-900/50 text-center space-y-3 rounded p-3">
+          <div className="w-full min-h-[100px] flex flex-col justify-center items-center max-w-[500px] mx-auto bg-neutral-700 shadow-md shadow-neutral-900/50 text-center space-y-3 rounded p-3">
             <div className="flex items-center justify-center">
               <RiSmartphoneLine className="text-2xl " />
               <h1 className="text-xl font-RubikMD ">Phone</h1>
@@ -91,7 +91,7 @@ function Resume() {
               +98 09038953557
             </h4>
           </div>
-          <div className="w-full max-w-[500px]  min-h-[100px] mx-auto justify-center items-center bg-cyan-900 shadow-md shadow-cyan-900/50 text-center space-y-3 rounded p-3 py-5">
+          <div className="w-full max-w-[500px]  min-h-[100px] mx-auto justify-center items-center bg-neutral-700 shadow-md shadow-neutral-900/50 text-center space-y-3 rounded p-3 py-5">
             <div className="flex items-center justify-center">
               <HiOutlineMail className="text-2xl mx-2" />
               <h1 className="text-xl font-RubikMD ">Email</h1>

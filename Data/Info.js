@@ -209,7 +209,7 @@ let info = {
           Projectid: "OnlineShop",
           Demo: "/TaskAppDark.jpeg",
           DescriptionTitel: "توضیحات",
-          Description: "قروشگاه اینترنتی برای سفارش آنلاین محصول",
+          Description: "فروشگاه اینترنتی برای سفارش آنلاین محصول",
           usedlanguageTitel: "زبان های استفاده شده",
           usedlanguage: [
             { Titel: "React", color: "React" },
