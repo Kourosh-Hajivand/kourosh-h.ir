@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FaHome } from "react-icons/fa";
-import blacklan from "/public/LanBlack.png";
+
 import Head from "next/head";
 import { wrapper } from "../Store/store";
 import Link from "next/link";
@@ -11,7 +11,7 @@ import Data from "../Data/Info";
 import { useRouter } from "next/router";
 import { getCookie, setCookie } from "cookies-next";
 import { changelan } from "../Store/LanguageReducer";
-import Script from "next/script";
+import { LanguageCircle } from "iconsax-react";
 
 function Projectid(props) {
   const { loadedProject, Language } = props;
@@ -42,7 +42,8 @@ function Projectid(props) {
               </div>
             </Link>
             <div className="flex flex-row space-x-2 items-center justify-center">
-              <Image src={blacklan} width={20} height={20} alt="" />
+              <LanguageCircle variant="Bold" />
+
               <p
                 onClick={changelan}
                 className="font-RubikSemiBold cursor-pointer font-semibold select-none"

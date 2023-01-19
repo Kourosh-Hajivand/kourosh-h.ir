@@ -3,8 +3,6 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import whiteLogo from "../public/Logo-White1.png";
 import blackLogo from "../public/Logo1.png";
-import whitelan from "../public/Lanwhite.png";
-import blacklan from "../public/LanBlack.png";
 import { useDispatch, useSelector } from "react-redux";
 import { changelan } from "../Store/LanguageReducer";
 import { ChangeData } from "../Store/DataReducer";
