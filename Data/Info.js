@@ -21,9 +21,63 @@ let info = {
       ProjectTitel: "Projects",
       Projects: [
         {
+          Titel: "NFT Website",
+          Projectid: "NFT Website",
+          logo: "/Project/BitCoin.png",
+          Demo: "/NFTPage.jpeg",
+          DescriptionTitel: "Description",
+          Description: "Weather app For Knowing curent Weather in a Location",
+          usedlanguageTitel: "Used Language",
+          usedlanguage: [
+            { Titel: "React", color: "React" },
+            { Titel: "React Router", color: "router" },
+            { Titel: "JavaScript", color: "js" },
+            { Titel: "Tailwind", color: "Tailwind" },
+            { Titel: "Css", color: "Css" },
+            { Titel: "Html", color: "Html" },
+            { Titel: "API", color: "React" },
+          ],
+          PropertysTitel: "Properties",
+          Propertys: [
+            {
+              Titel: "Fully Responsive",
+              icon: "/responsiveLogo.png",
+            },
+          ],
+          SourceCodeLink: "https://github.com/Kourosh-Hajivand/NFT_Website",
+          ProjectUrl: "https://nftwebsite-chi.vercel.app/",
+        },
+        {
+          Titel: "CMS",
+          Projectid: "ContentManagmentSystem",
+          logo: "/Project/CMS.png",
+          Demo: "/CMS.jpeg",
+          DescriptionTitel: "Description",
+          Description: "Weather app For Knowing curent Weather in a Location",
+          usedlanguageTitel: "Used Language",
+          usedlanguage: [
+            { Titel: "Next.js", color: "nextjs" },
+            { Titel: "React", color: "React" },
+            { Titel: "JavaScript", color: "js" },
+            { Titel: "API", color: "React" },
+            { Titel: "Tailwind", color: "Tailwind" },
+            { Titel: "Html", color: "Html" },
+            { Titel: "Css", color: "Css" },
+          ],
+          PropertysTitel: "Properties",
+          Propertys: [
+            {
+              Titel: "Fully Responsive",
+              icon: "/responsiveLogo.png",
+            },
+          ],
+          SourceCodeLink: "https://github.com/Kourosh-Hajivand/CMS_Template",
+          ProjectUrl: "https://cms-template-kohl.vercel.app/",
+        },
+        {
           Titel: "Weather App",
           Projectid: "WeatherApp",
-          logo: "/weatherlogo.png",
+          logo: "/Project/Cloud.png",
           Demo: "/WheatherApp.jpeg",
           DescriptionTitel: "Description",
           Description: "Weather app For Knowing curent Weather in a Location",
@@ -50,7 +104,7 @@ let info = {
         {
           Titel: "Task App",
           Projectid: "TaskApp",
-          logo: "/TaskLogo.png",
+          logo: "/Project/TaskApp.png",
           Demo: "/TaskAppDark.jpeg",
           DescriptionTitel: "Description",
           Description: "Task App For Write All Your Task in a Day",
@@ -88,7 +142,7 @@ let info = {
         {
           Titel: "Online Shop",
           Projectid: "OnlineShop",
-          logo: "/Shoping.png",
+          logo: "/Project/Cart.png",
           link: "#",
           DescriptionTitel: "Description",
           Description: "Weather app For Knowing curent Weather in a Location",
@@ -139,8 +193,64 @@ let info = {
       ProjectTitel: "پروژه ها",
       Projects: [
         {
+          Titel: "NFT سایت ",
+          Projectid: "NFT Website",
+          logo: "/Project/BitCoin.png",
+          Demo: "/NFTPage.jpeg",
+          DescriptionTitel: "توضیحات",
+          Description: "سایتی برای فروش ان اف تی  به همراه داشبورد ادمین",
+          usedlanguageTitel: "زبان های استفاده شده",
+          usedlanguage: [
+            { Titel: "React", color: "React" },
+            { Titel: "React Router", color: "router" },
+            { Titel: "JavaScript", color: "js" },
+            { Titel: "Tailwind", color: "Tailwind" },
+            { Titel: "Css", color: "Css" },
+            { Titel: "Html", color: "Html" },
+            { Titel: "API", color: "React" },
+          ],
+          PropertysTitel: "Properties",
+          Propertys: [
+            {
+              Titel: "Fully Responsive",
+              icon: "/responsiveLogo.png",
+            },
+          ],
+          SourceCodeLink: "https://github.com/Kourosh-Hajivand/NFT_Website",
+          ProjectUrl: "https://nftwebsite-chi.vercel.app/",
+        },
+        {
+          Titel: "سیستم مدیریت محتوا",
+          Projectid: "ContentManagmentSystem",
+          logo: "/Project/CMS.png",
+          Demo: "/CMS.jpeg",
+          DescriptionTitel: "توضیحات",
+
+          Description: "سایتی با قابلیت مدیریت محتوا توسط ادمین",
+          usedlanguageTitel: "زبان های استفاده شده",
+
+          usedlanguage: [
+            { Titel: "Next.js", color: "nextjs" },
+            { Titel: "React", color: "React" },
+            { Titel: "JavaScript", color: "js" },
+            { Titel: "API", color: "React" },
+            { Titel: "Tailwind", color: "Tailwind" },
+            { Titel: "Html", color: "Html" },
+            { Titel: "Css", color: "Css" },
+          ],
+          PropertysTitel: "Properties",
+          Propertys: [
+            {
+              Titel: "Fully Responsive",
+              icon: "/responsiveLogo.png",
+            },
+          ],
+          SourceCodeLink: "https://github.com/Kourosh-Hajivand/CMS_Template",
+          ProjectUrl: "https://cms-template-kohl.vercel.app/",
+        },
+        {
           Titel: "آب و هوا",
-          logo: "/weatherlogo.png",
+          logo: "/Project/Cloud.png",
           Projectid: "WeatherApp",
           Demo: "/WheatherApp.jpeg",
           DescriptionTitel: "توضیحات",
@@ -169,7 +279,8 @@ let info = {
         {
           Titel: "مدیریت کار ها",
           Projectid: "TaskApp",
-          logo: "/TaskLogo.png",
+          logo: "/Project/TaskApp.png",
+
           Demo: "/TaskAppDark.jpeg",
           DescriptionTitel: "توضیحات",
           Description: "برنامه ای برای مدیریت کار های روزانه",
@@ -205,7 +316,7 @@ let info = {
         },
         {
           Titel: "آنلاین شاپ",
-          logo: "/Shoping.png",
+          logo: "/Project/Cart.png",
           Projectid: "OnlineShop",
           Demo: "/TaskAppDark.jpeg",
           DescriptionTitel: "توضیحات",

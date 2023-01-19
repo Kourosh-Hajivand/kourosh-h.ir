@@ -10,12 +10,13 @@ import { changelan } from "../Store/LanguageReducer";
 import { ChangeData } from "../Store/DataReducer";
 import Data from "../Data/Info";
 import { setCookies } from "cookies-next";
+import { LanguageCircle } from "iconsax-react";
 
 function Navbar() {
   const [active, setactive] = useState(false);
   const [scrolled, setscroll] = useState(false);
   const [logo, setlogo] = useState(whiteLogo);
-  const [lanlogo, setlanlogo] = useState(whitelan);
+
   const lan = useSelector((state) => state.Language);
 
   let Titel = ["Home", "AboutMe", "Projects", "Resume"];
@@ -26,11 +27,9 @@ function Navbar() {
       if (window.scrollY >= 90) {
         setscroll(true);
         setlogo(blackLogo);
-        setlanlogo(blacklan);
       } else {
         setscroll(false);
         setlogo(whiteLogo);
-        setlanlogo(whitelan);
       }
     };
     window.addEventListener("scroll", changecolor);
@@ -129,7 +128,8 @@ function Navbar() {
                 );
               })}
               <li className="flex items-center justify-center space-x-2">
-                <Image src={blacklan} width={20} height={20} alt="" />
+                <LanguageCircle variant="Bold" />
+
                 <p
                   onClick={MobileLan}
                   className="font-RubikSemiBold cursor-pointer font-semibold select-none"
@@ -172,7 +172,8 @@ function Navbar() {
               );
             })}
             <li className="flex items-center justify-center space-x-2">
-              <Image src={lanlogo} width={20} height={20} alt="" />
+              <LanguageCircle variant="Bold" />
+
               <p
                 onClick={ChangeLanHandler}
                 className="font-RubikSemiBold cursor-pointer font-semibold select-none"

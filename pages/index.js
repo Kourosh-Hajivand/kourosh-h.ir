@@ -11,6 +11,7 @@ import { ChangeData } from "../Store/DataReducer";
 import Data from "../Data/Info";
 import { changelan } from "../Store/LanguageReducer";
 import Script from "next/script";
+import Skill from "../Components/Skill";
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -44,6 +45,9 @@ export default function Home() {
         </section>
         <section>
           <Aboutme />
+        </section>
+        <section>
+          <Skill />
         </section>
         <section>
           <Projects />

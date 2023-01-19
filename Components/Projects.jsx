@@ -1,6 +1,8 @@
+import { ArrowDown2, MobileProgramming } from "iconsax-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useSelector } from "react-redux";
+import Github from "../public/Project/GitHub.png";
 function Projects() {
   const lan = useSelector((state) => state.Language);
   const titel = useSelector(
@@ -10,6 +12,7 @@ function Projects() {
   const ProjectCard = useSelector(
     (state) => state.Data.Contetnt.ProjectPage.Projects
   );
+
   return (
     <div
       id="Projects"
@@ -17,8 +20,8 @@ function Projects() {
     >
       <div className="max-w-[1240px] text-center mx-auto flex flex-col justify-center items-center">
         <h1
-          className={`text-4xl mb-5 tracking-wide font-RubikSemiBold block text-neutral-800 ${
-            lan === "FA" ? "font-IransansBold" : "font-RubikSemiBold"
+          className={`text-4xl mb-5 tracking-wide  block text-neutral-800 ${
+            lan === "FA" ? "font-Iransansblack" : "font-RubikSemiBold"
           }`}
         >
           {titel}
@@ -34,23 +37,28 @@ function Projects() {
           return (
             <div
               data-aos="fade-up"
-              data-aos-offset="0"
-              data-aos-delay="0"
-              data-aos-duration="500"
+              data-aos-offset="00"
+              data-aos-delay="50"
+              data-aos-duration="900"
               data-aos-easing="ease-in-out"
-              data-aos-mirror="true"
-              data-aos-once="false"
-              data-aos-anchor-placement="top-center"
               key={index}
             >
-              <div className="py-6 px-6 min-h-[200px] xl:space-y-3 rounded-md bg-white transition-all drop-shadow-lg projectcard relative duration-300 hover:drop-shadow-2xl ">
+              <div className="py-6 px-6 min-h-[200px] xl:space-y-3 rounded-md bg-white group shadow-md projectcard relative duration-300 hover:shadow-xl ">
                 <div
                   className={`w-full mb-3 flex ${
                     lan === "FA" ? "justify-end" : "justify-start"
                   } `}
                 >
-                  <div className="w-[50px] h-[50px] relative z-10">
-                    <Image src={item.logo} fill sizes="100%" alt="" />
+                  <div className=" rounded-full bg-neutral-800 p-3 z-10 flex items-center justify-center">
+                    <div className="w-[35px] h-[35px]  relative z-10">
+                      <Image
+                        src={item.logo}
+                        fill
+                        sizes="100%"
+                        className="object-contain"
+                        alt=""
+                      />
+                    </div>
                   </div>
                 </div>
                 <h1
@@ -61,8 +69,10 @@ function Projects() {
                   {item.Titel}
                 </h1>
                 <p
-                  className={`text-gray-500 font-RubikLight min-h-[50px]  ${
-                    lan === "FA" ? "font-IransansMD text-end" : "font-RubikMD"
+                  className={`text-gray-500  min-h-[50px]  ${
+                    lan === "FA"
+                      ? "font-IransansThin text-end"
+                      : "font-RubikLight"
                   }`}
                 >
                   {item.Description}
@@ -79,7 +89,7 @@ function Projects() {
                     aria-label={item.Titel}
                   >
                     <button
-                      className={`px-8 mt-2 active:scale-75  duration-300 ease-in rounded-sm  hover:bg-gray-900 hover:text-gray-50 py-2 border-black border ${
+                      className={`px-8 mt-2 active:scale-75  duration-300 ease-in rounded-sm  group-hover:bg-gray-900 group-hover:text-gray-50 py-2  border-black border ${
                         lan === "FA" ? "font-IransansMD" : "font-Rubik"
                       }`}
                     >
@@ -91,6 +101,69 @@ function Projects() {
             </div>
           );
         })}
+        <div
+          data-aos="fade-up"
+          data-aos-offset="00"
+          data-aos-delay="50"
+          data-aos-duration="900"
+          data-aos-easing="ease-in-out"
+        >
+          <div className="py-6 px-6 min-h-[200px] xl:space-y-3 rounded-md bg-white group shadow-md projectcard relative duration-300 hover:shadow-xl ">
+            <div
+              className={`w-full mb-3 flex ${
+                lan === "FA" ? "justify-end" : "justify-start"
+              } `}
+            >
+              <div className="animate-bounce rounded-full bg-neutral-800 p-3 z-10 flex items-center justify-center">
+                <div className="w-[35px] h-[35px]  relative z-10">
+                  <Image
+                    src={Github}
+                    fill
+                    sizes="100%"
+                    className="object-contain"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <h1
+              className={`text-2xl   text-gray-700 tracking-normal mb-3 ${
+                lan === "FA" ? "font-IransansMD text-end" : "font-RubikMD"
+              }`}
+            >
+              {lan === "FA" ? "گیت هاب" : "GitHub"}
+            </h1>
+            <p
+              className={`text-gray-500  min-h-[50px]  ${
+                lan === "FA" ? "font-IransansThin text-end" : "font-RubikLight"
+              }`}
+            >
+              {lan === "FA"
+                ? "! برای دیدن باقی پروژه ها به گیت هاب من سر بزنید"
+                : "For See more Project Check my Github Acount !"}
+            </p>
+            <div
+              className={`w-full flex ${
+                lan === "FA" ? "justify-end " : "justify-start"
+              }`}
+            >
+              <Link
+                href="https://github.com/Kourosh-Hajivand?tab=repositories"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Github"
+              >
+                <button
+                  className={`px-8 mt-2 active:scale-75  duration-300 ease-in rounded-sm  group-hover:bg-gray-900 group-hover:text-gray-50 py-2  border-black border ${
+                    lan === "FA" ? "font-IransansMD" : "font-Rubik"
+                  }`}
+                >
+                  {lan === "FA" ? "بیشتر" : "See more"}
+                </button>
+              </Link>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -3,6 +3,7 @@ import React from "react";
 import HeroButtonBackground from "../public/HeroB.png";
 import DigitalArt from "../public/DigitalArt.png";
 import { useSelector } from "react-redux";
+import { Profile } from "iconsax-react";
 function Aboutme() {
   const Aboutme = useSelector((state) => state.Data.Contetnt.Aboutme);
   const lan = useSelector((state) => state.Language);
@@ -34,15 +35,29 @@ function Aboutme() {
           />
         </div>
         <div className=" mt-4  parent">
-          <h1
-            className={`text-4xl tracking-wide  text-gray-900 ${
+          <div
+            className={`flex space-x-2  ${
               lan === "FA"
-                ? "font-Iransansblack text-end"
-                : "font-RubikSemiBold"
+                ? "items-center justify-end"
+                : "items-center justify-start"
             }`}
           >
-            {Aboutme.Titel}
-          </h1>
+            <Profile
+              className={`${lan === "FA" ? "order-2" : "order-none"}`}
+              variant="Bold"
+              size={36}
+            />
+
+            <h1
+              className={`text-4xl tracking-wide  text-gray-900 ${
+                lan === "FA"
+                  ? "font-Iransansblack order-1"
+                  : "font-RubikSemiBold order-2"
+              }`}
+            >
+              {Aboutme.Titel}
+            </h1>
+          </div>
           <h4
             className={`text-lg mt-2  text-gray-600 ${
               lan === "FA" ? "font-IransansMD text-end" : "font-RubikMD"

@@ -57,9 +57,9 @@ function Resume() {
       )}
       <div className="max-w-[1240px]  text-center mx-auto flex flex-col justify-center items-center">
         <h1
-          className={`text-4xl mb-5 tracking-wide  font-semibold block text-neutral-800 ${
+          className={`text-4xl mb-5 tracking-wide  block text-neutral-800 ${
             lan === "FA"
-              ? "font-IransansMD tracking-wider"
+              ? "font-Iransansblack tracking-wider"
               : "font-RubikSemiBold"
           }`}
         >

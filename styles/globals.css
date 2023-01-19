@@ -88,6 +88,13 @@
   clip-path: inset(0 0 0 0);
   position: relative;
 }
+.SKillwraper {
+  min-height: 300px;
+
+  width: 100%;
+  clip-path: inset(0 0 0 0);
+  position: relative;
+}
 
 .puring,
 .react,
