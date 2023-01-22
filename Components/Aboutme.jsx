@@ -85,7 +85,7 @@ function Aboutme() {
                 data-aos-delay="50"
                 data-aos-duration="500"
                 data-aos-easing="ease-in-out"
-                data-value="75%"
+                data-value="87%"
                 className="Skill puring"
               ></div>
             </div>
@@ -99,7 +99,7 @@ function Aboutme() {
                 data-aos-delay="50"
                 data-aos-duration="700"
                 data-aos-easing="ease-in-out"
-                data-value="80%"
+                data-value="85%"
                 className=" Skill react "
               ></div>
             </div>
