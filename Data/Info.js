@@ -26,7 +26,7 @@ let info = {
           logo: "/Project/BitCoin.png",
           Demo: "/NFTPage.jpeg",
           DescriptionTitel: "Description",
-          Description: "Weather app For Knowing curent Weather in a Location",
+          Description: "NFT Website for sell Your NFT With Admin Dashboard",
           usedlanguageTitel: "Used Language",
           usedlanguage: [
             { Titel: "React", color: "React" },
@@ -53,7 +53,7 @@ let info = {
           logo: "/Project/CMS.png",
           Demo: "/CMS.jpeg",
           DescriptionTitel: "Description",
-          Description: "Weather app For Knowing curent Weather in a Location",
+          Description: "Website with Content Managment system ",
           usedlanguageTitel: "Used Language",
           usedlanguage: [
             { Titel: "Next.js", color: "nextjs" },
@@ -145,7 +145,7 @@ let info = {
           logo: "/Project/Cart.png",
           link: "#",
           DescriptionTitel: "Description",
-          Description: "Weather app For Knowing curent Weather in a Location",
+          Description: "OnlineShop for order Online  ",
           usedlanguageTitel: "Used Language",
 
           usedlanguage: [
