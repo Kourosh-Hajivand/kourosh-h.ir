@@ -12,6 +12,7 @@ import Data from "../Data/Info";
 import { changelan } from "../Store/LanguageReducer";
 import Script from "next/script";
 import Skill from "../Components/Skill";
+import ContactMe from "../Components/ContactMe";
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -54,6 +55,9 @@ export default function Home() {
         </section>
         <section>
           <Resume />
+        </section>
+        <section>
+          <ContactMe />
         </section>
       </main>
       <footer>

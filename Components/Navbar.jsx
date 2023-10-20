@@ -17,7 +17,7 @@ function Navbar() {
 
   const lan = useSelector((state) => state.Language);
 
-  let Titel = ["Home", "AboutMe", "Projects", "Resume"];
+  let Titel = ["Home", "AboutMe", "Projects", "Resume", "Contact Me"];
 
   const dispatch = useDispatch();
   useEffect(() => {
@@ -57,7 +57,7 @@ function Navbar() {
   return (
     <div
       className={`fixed top-0 left-0 w-full z-20 ease-in duration-500 ${
-        scrolled ? "backdrop-blur-lg bg-white/70 drop-shadow-xl" : ""
+        scrolled ? "backdrop-blur-lg bg-white/70 drop-shadow-md" : ""
       }`}
     >
       <div className=" max-w-[1340px]  md:px-10 relative mx-auto flex justify-between items-center p-5 ">
@@ -125,6 +125,9 @@ function Navbar() {
                   </li>
                 );
               })}
+              <li>
+                <button className="bg-red-400">Hire ME</button>
+              </li>
               <li className="flex items-center justify-center space-x-2">
                 <LanguageCircle variant="Bold" />
 
@@ -142,7 +145,7 @@ function Navbar() {
         {/* NavbarTitel Desktop */}
         <div className=" hidden md:block">
           <ul
-            className={`flex space-x-10 ${
+            className={`flex gap-10 items-center ${
               scrolled ? "text-black " : "text-white "
             }`}
           >
@@ -169,6 +172,7 @@ function Navbar() {
                 </li>
               );
             })}
+
             <li className="flex items-center justify-center space-x-2">
               <LanguageCircle variant="Bold" />
 
