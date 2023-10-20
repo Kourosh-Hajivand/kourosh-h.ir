@@ -36,6 +36,11 @@ function Resume() {
     setModal(false);
   };
 
+  const [Ismobile, setIsmobile] = useState(false);
+  useEffect(() => {
+    const isMobile = window.innerWidth <= 768;
+    setIsmobile(isMobile);
+  }, []);
   return (
     <div
       id="Resume"
@@ -80,20 +85,38 @@ function Resume() {
         </span>
       </div>
       <div className="flex flex-col lg:flex-row my-7 mx-auto gap-6 max-w-[1240px] w-full justify-center items-center ">
-        <Tilt className="w-[70%] md:w-[40%] lg:w-[40%] xl:w-[27%] h-[370px]  mx-auto overlay duration-300 ease-in  relative  rounded hover:shadow-xl overflow-hidden ">
-          <div
-            onClick={ImagePreviewHandler}
-            className=" opacity-0 font-Rubik font-bold z-20  text-white cursor-pointer absolute top-0 left-0 w-full flex justify-center items-center h-full duration-300 ease-in hover:backdrop-blur-lg hover:opacity-100"
-          >
-            Preview
+        {Ismobile ? (
+          <div className="w-[70%] md:w-[40%] lg:w-[40%] xl:w-[27%] h-[370px]  mx-auto overlay duration-300 ease-in  relative  rounded hover:shadow-xl overflow-hidden ">
+            <div
+              onClick={ImagePreviewHandler}
+              className=" opacity-0 font-Rubik font-bold z-20  text-white cursor-pointer absolute top-0 left-0 w-full flex justify-center items-center h-full duration-300 ease-in hover:backdrop-blur-lg hover:opacity-100"
+            >
+              Preview
+            </div>
+            <Image
+              className="object-contain"
+              fill
+              src={lan === "FA" ? "/Resume FN.png" : "/Resume EN.png"}
+              alt=""
+            />
           </div>
-          <Image
-            className="object-contain"
-            fill
-            src={lan === "FA" ? "/Resume FN.png" : "/Resume EN.png"}
-            alt=""
-          />
-        </Tilt>
+        ) : (
+          <Tilt className="w-[70%] md:w-[40%] lg:w-[40%] xl:w-[27%] h-[370px]  mx-auto overlay duration-300 ease-in  relative  rounded hover:shadow-xl overflow-hidden ">
+            <div
+              onClick={ImagePreviewHandler}
+              className=" opacity-0 font-Rubik font-bold z-20  text-white cursor-pointer absolute top-0 left-0 w-full flex justify-center items-center h-full duration-300 ease-in hover:backdrop-blur-lg hover:opacity-100"
+            >
+              Preview
+            </div>
+            <Image
+              className="object-contain"
+              fill
+              src={lan === "FA" ? "/Resume FN.png" : "/Resume EN.png"}
+              alt=""
+            />
+          </Tilt>
+        )}
+
         <div className="grid xl:grid-cols-2  gap-5 text-neutral-50 max-w-[720px]  w-full">
           <div className="w-full min-h-[100px] flex flex-col justify-center items-center max-w-[500px] mx-auto bg-neutral-700 shadow-md shadow-neutral-900/50 text-center space-y-3 rounded p-3">
             <div className="flex items-center justify-center">

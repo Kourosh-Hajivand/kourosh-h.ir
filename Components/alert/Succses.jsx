@@ -17,7 +17,7 @@ function Succses({ status, Massage }) {
   }, [status]);
   return (
     <div
-      className={`bg-[#009688]/50 text-white  duration-200  max-w-[350px] min-w-[200px] backdrop-blur-[35px] py-4 px-4 rounded-r-2xl flex items-start justify-center flex-col fixed bottom-10 right-10 z-[100] ${
+      className={`bg-[#009688]/50 text-white  duration-200  max-w-[350px] md:min-w-[200px] backdrop-blur-[35px] py-4 px-4 rounded-r-2xl flex items-start justify-center flex-col fixed bottom-10 right-10 z-[100] ${
         isRendered ? "fade-in" : "fade-out"
       }`}
     >
