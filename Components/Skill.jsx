@@ -17,7 +17,7 @@ function Skill() {
         <div className="flex items-center justify-center text-gray-50 flex-col space-y-2">
           <div className="text-6xl flex items-center justify-center space-x-3 ">
             <h1 className=" font-RubikSemiBold">
-              <CountUp end={3} enableScrollSpy />
+              <CountUp end={3} enableScrollSpy startOnMount />
             </h1>
             <MedalStar variant="Bold" size={56} />
           </div>
@@ -34,7 +34,7 @@ function Skill() {
         <div className="flex  items-center justify-center text-gray-50 flex-col space-y-2">
           <div className="text-6xl flex items-center justify-center space-x-3 ">
             <h1 className=" font-RubikSemiBold">
-              <CountUp end={15} enableScrollSpy />
+              <CountUp end={20} enableScrollSpy startOnMount />
             </h1>
             <DocumentCode2 variant="Bold" size={56} />
           </div>
@@ -51,7 +51,7 @@ function Skill() {
         <div className="flex items-center justify-center text-gray-50 flex-col space-y-2">
           <div className="text-6xl flex items-center justify-center space-x-3 ">
             <h1 className=" font-RubikSemiBold">
-              <CountUp end={6842} enableScrollSpy />
+              <CountUp end={6842} enableScrollSpy startOnMount />
             </h1>
             <Teacher variant="Bold" size={56} />
           </div>

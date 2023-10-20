@@ -11,11 +11,10 @@ let info = {
       Titel: "About Me",
       describ: "I Am Front-End Developer and UI Designer",
       AboutmeText: `I'm Kourosh Hajivand, Front-end Developer from Tehran,Iran
-      its been about 3 years I learn Front-end development by self taught
-      i use some resources like : Youtube, Mozilla, W3school and online courses
-      i have Good knowledge in html, css, Bootstrap ,Tailwind ,javascript,  React.js,
-      React-Router, Redux,Next.js Git ,all Liberis we need in front-end development
-      also i have experince in designing with adobe illustrator`,
+      I am a self-taught with 3 years of experience also have experience in Web3. 
+      I have worked remotely on various web projects from my home. 
+      I love learning and always strive to do my best, 
+      especially when working on difficult tasks`,
     },
     ProjectPage: {
       ProjectTitel: "Projects",
@@ -187,7 +186,9 @@ let info = {
     Aboutme: {
       Titel: "درباره من",
       describ: "برنامه نویس فرانت اند و طراحی سایت",
-      AboutmeText: ` کوروش حاجیوند برنامه نویس فرانت اند از تهران هستم حدود ۳ سال هست که برنامه نویسی فرانت رو به صورت خود آموز یادگرفتم و از منابعی مثل : یوتوب موزیلا و دوره های آنلاین استفاده کردم مهارت های من : اچ تی ام ال, سی اس اس, بوت استرپ,تیل ویند, جاوااسکریپت, ریکت جی اس, ریکت روتر, ریداکس,نکست جی اس, گیت, و تمامی کتاب خانه هایی که در فرانت اند استفاده میشوند و همچنین تجربه دیزاین با ایلستریتور و فیگما رو دارم`,
+      AboutmeText: `  کوروش حاجیوند برنامه نویس فرانت اند از تهران هستم برنامه نویسی رو به صورت خوداموز یادگرفتم ۳ سال تجربه کاری و تجربه کار در حوضه وب ۳ دارم
+      به صورت ریموت روی پروژه های مختلف کار کردم و علاقه مند به یادگیری مطالب جدید
+           و همیشه سعی میکنم بهترین کار رو انجام بدم و عاشق چالش های مختلف سخت`,
     },
     ProjectPage: {
       ProjectTitel: "پروژه ها",

@@ -4,17 +4,7 @@ import Link from "next/link";
 import { useSelector } from "react-redux";
 import Github from "../public/Project/GitHub.png";
 import Tilt from "react-parallax-tilt";
-// const defaultOptions = {
-//   reverse: false, // reverse the tilt direction
-//   max: 35, // max tilt rotation (degrees)
-//   perspective: 1000, // Transform perspective, the lower the more extreme the tilt gets.
-//   scale: 1.1, // 2 = 200%, 1.5 = 150%, etc..
-//   speed: 1000, // Speed of the enter/exit transition
-//   transition: true, // Set a transition on enter/exit.
-//   axis: null, // What axis should be disabled. Can be X or Y.
-//   reset: true, // If the tilt effect has to be reset on exit.
-//   easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit.
-// };
+
 function Projects() {
   const lan = useSelector((state) => state.Language);
   const titel = useSelector(
@@ -56,7 +46,7 @@ function Projects() {
               data-aos-easing="ease-in-out"
               key={index}
             >
-              <div className="py-6 px-6 min-h-[200px] xl:space-y-3 rounded-md bg-white group shadow-md projectcard relative duration-300 hover:shadow-xl ">
+              <div className="py-6 px-6 min-h-[200px] select-none xl:space-y-3 rounded-md bg-white group shadow-md projectcard relative duration-300 hover:shadow-xl ">
                 <div
                   className={`w-full mb-3 flex ${
                     lan === "FA" ? "justify-end" : "justify-start"

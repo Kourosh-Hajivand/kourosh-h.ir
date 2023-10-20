@@ -78,7 +78,9 @@ function Aboutme() {
           {/* Progress Bar */}
           <div className="mt-14 space-y-12">
             <div className="bgSkill relative">
-              <h1 className="font-RubikSemiBold absolute -top-9">Next.js</h1>
+              <h1 className="font-RubikSemiBold absolute -top-9">
+                React.js , Next.js
+              </h1>
               <div
                 data-aos=""
                 data-aos-offset="0"
@@ -91,7 +93,7 @@ function Aboutme() {
             </div>
             <div className="bgSkill relative">
               <h1 className="font-RubikSemiBold font-semibold absolute -top-9">
-                React.js , Redux
+                JavaScript , TypeScript
               </h1>
               <div
                 data-aos=""
@@ -105,7 +107,7 @@ function Aboutme() {
             </div>
             <div className="bgSkill relative ">
               <h1 className="font-RubikSemiBold   absolute -top-8 font-semibold ">
-                Tailwind , Bootstrap
+                Web3
               </h1>
               <div
                 data-aos=""
@@ -113,7 +115,7 @@ function Aboutme() {
                 data-aos-delay="50"
                 data-aos-duration="900"
                 data-aos-easing="ease-in-out"
-                data-value="90%"
+                data-value="60%"
                 className="Skill tailwind"
               ></div>
             </div>

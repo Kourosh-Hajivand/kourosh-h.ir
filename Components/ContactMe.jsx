@@ -103,7 +103,7 @@ function ContactMe() {
               : "font-RubikSemiBold"
           }`}
         >
-          Contact Me
+          {lan === "FA" ? "ارتبات با من" : " Contact Me"}
         </h1>
         <span className="relative w-60 inline-block lines">
           <i className="Square"></i>

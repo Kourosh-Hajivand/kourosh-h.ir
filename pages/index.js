@@ -38,6 +38,17 @@ export default function Home() {
           name="google-site-verification"
           content="88-CJGrz1gfhh7e48oy89RfV22Virswfj5CrG-arL90"
         />
+        <meta
+          name="description"
+          content="Kourosh Hajivand FrontEnd Developer React"
+        />
+        <meta
+          name="keywords"
+          content="React React.js Nextjs Next.js FrontEnd front developer hire tailwind html css javascript typescript JS TS JSX jsx "
+        />
+        <meta name="author" content="KouroshH" />
+        <link rel="icon" type="image/png" sizes="32x22" href="/Logo1.png" />
+        <meta property="og:image" content="/LogoOG.png" />
       </Head>
 
       <main className="font-Rubik scroll-smooth ">
