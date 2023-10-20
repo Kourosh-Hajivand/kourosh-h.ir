@@ -2,6 +2,7 @@ import info from "../Data/Info";
 import Image from "next/image";
 import { useSelector } from "react-redux";
 import { Link } from "react-scroll";
+
 import Typewriter from "typewriter-effect";
 import HeroImage from "../public/HeroPage.jpg";
 import {
@@ -25,14 +26,13 @@ function Hero() {
           className="object-cover"
           priority={true}
           placeholder="blur"
-          sizes="(max-width: 768px) 100vw,
-          (max-width: 1200px) 50vw,
-          33vw"
+          sizes="(max-width: 768px) 100vw"
+          quality={100}
           alt="Hero background"
         />
       </div>
 
-      <div className="bg-black/70 absolute top-0 left-0 right-0 bottom-0 z-[2]" />
+      <div className="bg-black/50 absolute top-0 left-0 right-0 bottom-0 z-[2]" />
       <div className="z-[2] text-white space-y-6">
         <h5 className="text-xl font-Rubik tracking-widest">Welcome</h5>
         <div className="flex flex-row space-x-3 justify-center items-center">

@@ -60,7 +60,7 @@ function Navbar() {
         scrolled ? "backdrop-blur-lg bg-white/70 drop-shadow-xl" : ""
       }`}
     >
-      <div className=" max-w-[1140px]  md:px-10 relative mx-auto flex justify-between items-center p-5 ">
+      <div className=" max-w-[1340px]  md:px-10 relative mx-auto flex justify-between items-center p-5 ">
         <Image
           src={logo}
           width={55}

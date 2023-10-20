@@ -3,6 +3,18 @@ import Image from "next/image";
 import Link from "next/link";
 import { useSelector } from "react-redux";
 import Github from "../public/Project/GitHub.png";
+import Tilt from "react-parallax-tilt";
+// const defaultOptions = {
+//   reverse: false, // reverse the tilt direction
+//   max: 35, // max tilt rotation (degrees)
+//   perspective: 1000, // Transform perspective, the lower the more extreme the tilt gets.
+//   scale: 1.1, // 2 = 200%, 1.5 = 150%, etc..
+//   speed: 1000, // Speed of the enter/exit transition
+//   transition: true, // Set a transition on enter/exit.
+//   axis: null, // What axis should be disabled. Can be X or Y.
+//   reset: true, // If the tilt effect has to be reset on exit.
+//   easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit.
+// };
 function Projects() {
   const lan = useSelector((state) => state.Language);
   const titel = useSelector(
@@ -12,7 +24,6 @@ function Projects() {
   const ProjectCard = useSelector(
     (state) => state.Data.Contetnt.ProjectPage.Projects
   );
-
   return (
     <div
       id="Projects"
@@ -35,7 +46,9 @@ function Projects() {
       <div className="max-w-[1240px] mx-auto grid md:grid-cols-2  xl:grid-cols-3 gap-8 mt-7">
         {ProjectCard.map((item, index) => {
           return (
-            <div
+            <Tilt
+              perspective={1500}
+              className="parallax-effect"
               data-aos="fade-up"
               data-aos-offset="00"
               data-aos-delay="50"
@@ -49,8 +62,8 @@ function Projects() {
                     lan === "FA" ? "justify-end" : "justify-start"
                   } `}
                 >
-                  <div className=" rounded-full bg-neutral-800 p-3 z-10 flex items-center justify-center">
-                    <div className="w-[35px] h-[35px]  relative z-10">
+                  <div className=" rounded-full bg-neutral-800 p-3 z-10 flex items-center justify-center inner-element ">
+                    <div className="w-[35px] h-[35px]  relative z-10 ">
                       <Image
                         src={item.logo}
                         fill
@@ -98,7 +111,7 @@ function Projects() {
                   </Link>
                 </div>
               </div>
-            </div>
+            </Tilt>
           );
         })}
         <div

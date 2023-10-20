@@ -42,14 +42,20 @@ function Resume() {
       {Modal ? (
         <div
           onClick={CloseModal}
-          className="w-full h-screen duration-500 fixed left-0 top-0  flex justify-center items-center bg-white/50 backdrop-blur-lg z-40"
+          className="w-full h-screen duration-500 fixed left-0 top-0  flex justify-center items-center bg-black/50 backdrop-blur-lg z-40"
         >
           <GrClose
-            className="absolute cursor-pointer right-10 top-10 text-4xl"
+            className="absolute cursor-pointer right-10 top-10 text-4xl text-white z-20"
             onClick={CloseModal}
+            color="#FFFFFF"
           />
-          <div className="w-[90%] sm:w-[70%] md:w-[50%]  lg:w-[40%] xl:w-[30%] ">
-            <Image src={resume} alt="" />
+          <div className="w-[90%] sm:w-[70%] md:w-[50%]  lg:w-[40%] xl:w-[30%] relative h-full ">
+            <Image
+              fill
+              className="object-contain"
+              src={lan === "FA" ? "/Resume FN.png" : "/Resume EN.png"}
+              alt=""
+            />
           </div>
         </div>
       ) : (
@@ -72,14 +78,19 @@ function Resume() {
         </span>
       </div>
       <div className="grid lg:grid-cols-2 my-7 mx-auto pb-10 gap-5 max-w-[1240px] justify-center items-center">
-        <div className="w-[50%] md:w-[40%] lg:w-[70%] xl:w-[50%]  mx-auto overlay duration-300 ease-in shadow-md hover:shadow-lg relative rounded overflow-hidden">
+        <div className="w-[50%] md:w-[40%] lg:w-[60%] xl:w-[50%]  h-[370px]  mx-auto overlay duration-300 ease-in shadow-md hover:shadow-lg relative rounded overflow-hidden ">
           <div
             onClick={ImagePreviewHandler}
-            className=" opacity-0 font-Rubik font-bold   text-white cursor-pointer absolute top-0 left-0 w-full flex justify-center items-center h-full duration-300 ease-in hover:backdrop-blur-lg hover:opacity-100"
+            className=" opacity-0 font-Rubik font-bold z-20  text-white cursor-pointer absolute top-0 left-0 w-full flex justify-center items-center h-full duration-300 ease-in hover:backdrop-blur-lg hover:opacity-100"
           >
             Preview
           </div>
-          <Image src={resume} alt="" />
+          <Image
+            className="object-contain"
+            fill
+            src={lan === "FA" ? "/Resume FN.png" : "/Resume EN.png"}
+            alt=""
+          />
         </div>
         <div className="grid xl:grid-cols-2  gap-5 text-neutral-50 ">
           <div className="w-full min-h-[100px] flex flex-col justify-center items-center max-w-[500px] mx-auto bg-neutral-700 shadow-md shadow-neutral-900/50 text-center space-y-3 rounded p-3">
@@ -101,7 +112,10 @@ function Resume() {
             </h4>
           </div>
           <div className="w-full  space-y-3 xl:col-span-2 rounded p-3">
-            <a href="/Resume.pdf" download>
+            <a
+              href={`${lan === "FA" ? "/Resume FN.pdf" : "/Resume EN.pdf"}`}
+              download
+            >
               <button
                 onMouseOver={hoverHandler}
                 onMouseOut={UnhoverHandler}
