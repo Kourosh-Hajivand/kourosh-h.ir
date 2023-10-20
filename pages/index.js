@@ -40,7 +40,7 @@ export default function Home() {
         />
       </Head>
 
-      <main className="font-Rubik">
+      <main className="font-Rubik scroll-smooth ">
         <section>
           <Hero />
         </section>

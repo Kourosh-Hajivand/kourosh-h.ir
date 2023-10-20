@@ -11,7 +11,7 @@ function Aboutme() {
   return (
     <div
       id="AboutMe"
-      className="relative px-5 md:px-16  py-16 lg:py-32 min-h-screen"
+      className="relative flex items-center justify-center flex-col px-5 md:px-16  py-16 lg:py-32 min-h-screen"
     >
       <div className="w-[100%] h-[180px] top-[-100px] lg:top-[-180px] z-10  left-0 overflow-hidden  absolute ">
         <Image

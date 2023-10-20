@@ -92,14 +92,14 @@ function Hero() {
           </a>
         </div>
         <Link
-          to={"Resume"}
+          to={"Contact Me"}
           spy={true}
           smooth={true}
-          offset={0}
+          offset={-80}
           duration={500}
           delay={0}
-          aria-label="Resume"
-          href="/resume"
+          aria-label="Contact Me"
+          href="/Contact Me"
         >
           <button className="px-8 py-3 mt-5 border active:scale-75 rounded-sm border-white hover:bg-white hover:text-black duration-300 ease-in">
             Contact Me

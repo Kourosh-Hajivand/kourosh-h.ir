@@ -37,7 +37,7 @@ function Resume() {
   return (
     <div
       id="Resume"
-      className="px-5 md:px-16  pt-16 lg:py-28 bg-neutral-50 relative w-full h-full"
+      className="px-5 md:px-16 flex items-center justify-center flex-col pt-16 lg:py-28 bg-neutral-50 relative w-full min-h-screen h-full"
     >
       {Modal ? (
         <div
@@ -61,7 +61,7 @@ function Resume() {
       ) : (
         ""
       )}
-      <div className="max-w-[1240px]  text-center mx-auto flex flex-col justify-center items-center">
+      <div className="max-w-[1240px] text-center mx-auto flex flex-col justify-center items-center">
         <h1
           className={`text-4xl mb-5 tracking-wide  block text-neutral-800 ${
             lan === "FA"
