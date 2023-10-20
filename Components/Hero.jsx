@@ -95,7 +95,7 @@ function Hero() {
           to={"Contact Me"}
           spy={true}
           smooth={true}
-          offset={-80}
+          offset={0}
           duration={500}
           delay={0}
           aria-label="Contact Me"
