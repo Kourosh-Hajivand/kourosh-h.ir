@@ -84,7 +84,7 @@ function ContactMe() {
   return (
     <div
       id="Contact Me"
-      className="px-5 md:px-16 flex items-center justify-center flex-col  pt-16 lg:py-28  relative w-full min-h-screen"
+      className="px-5 md:px-16 flex items-center justify-center flex-col  py-16 lg:py-28  relative w-full min-h-screen"
     >
       {result.error && result.result ? (
         <Error Massage={"Uknown Error"} status={result.result} />

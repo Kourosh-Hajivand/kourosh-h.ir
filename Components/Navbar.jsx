@@ -56,7 +56,7 @@ function Navbar() {
   };
   return (
     <div
-      className={`fixed top-0 left-0 w-full z-20 ease-in duration-500 ${
+      className={`fixed top-0 left-0 w-full z-50 ease-in duration-500 ${
         scrolled ? "backdrop-blur-lg bg-white/70 drop-shadow-md" : ""
       }`}
     >
@@ -94,7 +94,7 @@ function Navbar() {
 
         <div
           className={` w-full md:hidden absolute left-0 p-4 duration-300 ease-in z-20 ${
-            !active ? " -top-80 opacity-0" : "top-20 opacity-1"
+            !active ? " -top-[500%] opacity-0" : "top-20 opacity-1"
           }`}
         >
           <div className="w-full mx-auto  bg-white py-4 rounded">
@@ -125,9 +125,6 @@ function Navbar() {
                   </li>
                 );
               })}
-              <li>
-                <button className="bg-red-400">Hire ME</button>
-              </li>
               <li className="flex items-center justify-center space-x-2">
                 <LanguageCircle variant="Bold" />
 
