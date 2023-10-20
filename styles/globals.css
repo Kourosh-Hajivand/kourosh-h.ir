@@ -312,3 +312,14 @@
 .inner-element {
   transform: translateZ(60px);
 }
+.fade-in {
+  opacity: 1;
+  @apply translate-x-0;
+  transition: all 2s;
+}
+
+.fade-out {
+  opacity: 0;
+  @apply translate-x-full;
+  transition: all 2s;
+}

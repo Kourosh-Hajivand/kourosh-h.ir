@@ -1,5 +1,8 @@
 import React, { useRef, useState } from "react";
 import { useSelector } from "react-redux";
+import emailjs from "@emailjs/browser";
+import Succses from "./alert/Succses";
+import Error from "./alert/Error";
 
 function ContactMe() {
   const form = useRef();
@@ -8,6 +11,11 @@ function ContactMe() {
     user_name: "",
     user_email: "",
     message: "",
+  });
+  const [loading, setloading] = useState(false);
+  const [result, setresult] = useState({
+    result: false,
+    error: false,
   });
   const [formsErrors, setFormErrors] = useState({});
   const HandleInputChanges = (e) => {
@@ -38,20 +46,55 @@ function ContactMe() {
   const HandlerSubmit = (e) => {
     e.preventDefault();
     if (FormValidation()) {
-      console.log("====================================");
-      console.log("Done");
-      console.log("====================================");
+      setloading(true);
+
+      emailjs
+        .sendForm(
+          "service_cpbyooo",
+          "template_lw4ch51",
+          form.current,
+          "rN-L5Bjx5bu-lo-3e"
+        )
+        .then((res) => {
+          console.log(res);
+          setresult({ result: true, error: false });
+          setformdata({
+            message: "",
+            user_email: "",
+            user_name: "",
+          });
+          setTimeout(() => {
+            setresult({ result: false, error: false });
+          }, 4000);
+          setloading(false);
+        }),
+        (error) => {
+          console.log(error);
+          setresult({ result: true, error: true });
+          setTimeout(() => {
+            setresult({ result: false, error: false });
+          }, 4000);
+          setloading(false);
+        };
     } else {
-      console.log("====================================");
-      console.log("Faild");
-      console.log("====================================");
+      return;
     }
   };
+
   return (
     <div
       id="Contact Me"
       className="px-5 md:px-16   pt-16 lg:py-28  relative w-full min-h-screen"
     >
+      {result.error && result.result ? (
+        <Error Massage={"Uknown Error"} status={result.result} />
+      ) : (
+        <Succses
+          Massage={"You will get in touch with the person as soon as possible"}
+          status={result.result}
+        />
+      )}
+
       <div className="max-w-[1240px]  text-center mx-auto flex flex-col justify-center items-center">
         <h1
           className={`text-4xl mb-5 tracking-wide  block text-neutral-800 ${
@@ -125,10 +168,26 @@ function ContactMe() {
           </div>
           <button
             type="submit"
-            className="w-full border border-black font-semibold p-4 rounded-md hover:bg-black hover:text-white duration-200 mt-6"
+            disabled={loading}
+            className="w-full border border-black font-semibold p-4 rounded-md flex items-center justify-center hover:bg-black hover:text-white duration-200 mt-6 disabled:cursor-progress"
             value="Send"
           >
-            Submit
+            {loading ? (
+              <div aria-label="Loading...">
+                <svg className="h-5 w-5 animate-spin" viewBox="3 3 18 18">
+                  <path
+                    className="fill-white"
+                    d="M12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19C15.866 19 19 15.866 19 12C19 8.13401 15.866 5 12 5ZM3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12Z"
+                  ></path>
+                  <path
+                    className="fill-black"
+                    d="M16.9497 7.05015C14.2161 4.31648 9.78392 4.31648 7.05025 7.05015C6.65973 7.44067 6.02656 7.44067 5.63604 7.05015C5.24551 6.65962 5.24551 6.02646 5.63604 5.63593C9.15076 2.12121 14.8492 2.12121 18.364 5.63593C18.7545 6.02646 18.7545 6.65962 18.364 7.05015C17.9734 7.44067 17.3403 7.44067 16.9497 7.05015Z"
+                  ></path>
+                </svg>
+              </div>
+            ) : (
+              "Submit"
+            )}
           </button>
         </form>
       </div>
