@@ -1,9 +1,11 @@
 import Image from "next/image";
 import React from "react";
 import HeroButtonBackground from "../public/HeroB.png";
-import DigitalArt from "../public/DigitalArt.png";
+import DigitalArt from "../public/IMG_7942.jpeg";
 import { useSelector } from "react-redux";
 import { Profile } from "iconsax-react";
+import Tilt from "react-parallax-tilt";
+
 function Aboutme() {
   const Aboutme = useSelector((state) => state.Data.Contetnt.Aboutme);
   const lan = useSelector((state) => state.Language);
@@ -13,11 +15,11 @@ function Aboutme() {
       id="AboutMe"
       className="relative flex items-center justify-center flex-col px-5 md:px-16  py-16 lg:py-32 min-h-screen"
     >
-      <div className="w-[100%] h-[180px] top-[-100px] lg:top-[-180px] z-10  left-0 overflow-hidden  absolute ">
+      <div className="w-[100%] h-[180px] top-[-100px] lg:top-[-180px] z-10  left-0 overflow-hidden  absolute  ">
         <Image
           src={HeroButtonBackground}
           priority={true}
-          placeholder={"empty"}
+          placeholder={"blur"}
           alt=""
         />
       </div>
@@ -30,7 +32,7 @@ function Aboutme() {
             data-aos-duration="900"
             data-aos-easing="ease-in-out"
             src={DigitalArt}
-            className="relative z-[2] rounded-sm"
+            className="relative z-[2] rounded-lg shadow"
             alt=""
           />
         </div>

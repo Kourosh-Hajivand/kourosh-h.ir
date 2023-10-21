@@ -49,7 +49,7 @@ function Resume() {
       {Modal ? (
         <div
           onClick={CloseModal}
-          className="w-full h-screen duration-500 fixed left-0 top-0  flex justify-center items-center bg-black/50 backdrop-blur-lg z-40"
+          className="w-full h-screen duration-500 fixed left-0 top-0  flex justify-center items-center bg-black/50 backdrop-blur-lg z-[60]"
         >
           <GrClose
             className="absolute cursor-pointer right-10 top-10 text-4xl text-white z-20"
