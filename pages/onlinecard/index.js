@@ -6,9 +6,28 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
 import { BsGithub } from "react-icons/bs";
 import { IoCall } from "react-icons/io5";
+import Head from "next/head";
 function App() {
   return (
     <div className="flex justify-center min-h-screen w-full bg-black">
+      <Head>
+        <title>Kourosh H Digital Business Card</title>
+        <meta
+          name="google-site-verification"
+          content="88-CJGrz1gfhh7e48oy89RfV22Virswfj5CrG-arL90"
+        />
+        <meta
+          name="description"
+          content="Kourosh Hajivand FrontEnd Developer React"
+        />
+        <meta
+          name="keywords"
+          content="React React.js Nextjs Next.js FrontEnd front developer hire tailwind html css javascript typescript JS TS JSX jsx "
+        />
+        <meta name="author" content="KouroshH" />
+        <link rel="icon" type="image/png" sizes="32x22" href="/Logo1.png" />
+        <meta property="og:image" content="/LogoOG.png" />
+      </Head>
       <div className="w-full max-w-[420px] rounded-2xl overflow-hidden min-h-screen ">
         <div className="w-full h-[420px]  relative">
           <Image
