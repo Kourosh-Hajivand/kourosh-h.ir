@@ -1,3 +1,5 @@
+/** @format */
+
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
@@ -9,7 +11,7 @@ import { ChangeData } from "../Store/DataReducer";
 import Data from "../Data/Info";
 import { setCookies } from "cookies-next";
 import { LanguageCircle } from "iconsax-react";
-
+import { motion } from "framer-motion";
 function Navbar() {
   const [active, setactive] = useState(false);
   const [scrolled, setscroll] = useState(false);
@@ -56,23 +58,62 @@ function Navbar() {
   };
   return (
     <div
-      className={`fixed top-0 left-0 w-full z-50 ease-in duration-500 ${
-        scrolled ? "backdrop-blur-lg bg-white/70 drop-shadow-md" : ""
-      }`}
+      className={`fixed top-0 left-0 w-full z-50 px-6 duration-500 ${
+        scrolled ? " py-6" : "py-2"
+      }  `}
     >
-      <div className=" max-w-[1340px]  md:px-10 relative mx-auto flex justify-between items-center p-5 ">
-        <Image
-          src={logo}
-          width={55}
-          height={100}
-          alt="Logo"
-          priority={true}
-          placeholder={"empty"}
-          sizes="max-width: 768px) 100vw,
+      <div
+        className={` max-w-[1340px]  md:px-10 relative mx-auto flex justify-between rounded-3xl items-center px-6 py-4 ease-in duration-500 ${
+          scrolled ? "backdrop-blur-lg bg-white/60 shadow-xl" : ""
+        }`}
+      >
+        <div className="flex items-center gap-4">
+          <Link
+            onSetActive={ScrollActiveHandler}
+            activeClass="active"
+            to={"Home"}
+            spy={true}
+            smooth={true}
+            offset={-60}
+            duration={500}
+            delay={0}
+            className="cursor-pointer"
+          >
+            <motion.div
+              animate={scrolled ? { scale: 1 } : { scale: 1.2 }}
+              transition={{ duration: 0.5 }}
+              className=" w-[60px] h-[60px] relative"
+            >
+              <Image
+                src={logo}
+                fill
+                alt="Logo"
+                priority={true}
+                placeholder={"empty"}
+                sizes="max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,"
-        />
-        {/* Hamburger Menu */}
-
+              />
+            </motion.div>
+          </Link>
+          {/* Hamburger Menu */}
+          <motion.div
+            animate={
+              scrolled
+                ? { translateX: -80, opacity: 0, scale: 0.9 }
+                : { translateX: 0, opacity: 1, scale: 1 }
+            }
+            transition={{ duration: 0.5 }}
+            className="hidden lg:block"
+          >
+            <h1
+              className={`text-2xl font-bold ${
+                scrolled ? "text-black " : "text-white"
+              } `}
+            >
+              Kourosh H
+            </h1>
+          </motion.div>
+        </div>
         <div
           onClick={HumbergerHandler}
           className={` md:hidden hamburger hamburger--collapse  cursor-pointer ${
@@ -108,7 +149,7 @@ function Navbar() {
                     <Link
                       aria-label={item}
                       href={`/${item}`}
-                      className={`relative linenav ${
+                      className={`relative  linenav ${
                         scrolled ? "after:bg-black " : "after:bg-white"
                       } `}
                       onSetActive={ScrollActiveHandler}
@@ -140,7 +181,7 @@ function Navbar() {
         </div>
 
         {/* NavbarTitel Desktop */}
-        <div className=" hidden md:block">
+        <div className=" hidden md:block md:text-sm lg:text-base">
           <ul
             className={`flex gap-10 items-center ${
               scrolled ? "text-black " : "text-white "

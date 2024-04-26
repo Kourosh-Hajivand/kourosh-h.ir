@@ -1,3 +1,5 @@
+/** @format */
+
 let info = {
   EN: {
     Heropage: {
@@ -10,11 +12,7 @@ let info = {
     Aboutme: {
       Titel: "About Me",
       describ: "I Am Front-End Developer and UI Designer",
-      AboutmeText: `I'm Kourosh Hajivand, Front-end Developer from Tehran,Iran
-      I am a self-taught with 3 years of experience also have experience in Web3. 
-      I have worked remotely on various web projects from my home. 
-      I love learning and always strive to do my best, 
-      especially when working on difficult tasks`,
+      AboutmeText: `Kourosh Hajivand a front-end programmer from Tehran. I learned programming by self-taught. I have 4 years of work experience and work experience in Web 3. I have worked remotely and in person on various projects, and I am interested in learning and try new things. I do my best and love different challenges`,
     },
     ProjectPage: {
       ProjectTitel: "Projects",
@@ -186,8 +184,8 @@ let info = {
     Aboutme: {
       Titel: "درباره من",
       describ: "برنامه نویس فرانت اند و طراحی سایت",
-      AboutmeText: `  کوروش حاجیوند برنامه نویس فرانت اند از تهران هستم برنامه نویسی رو به صورت خوداموز یادگرفتم ۳ سال تجربه کاری و تجربه کار در حوضه وب ۳ دارم
-      به صورت ریموت روی پروژه های مختلف کار کردم و علاقه مند به یادگیری مطالب جدید
+      AboutmeText: `  کوروش حاجیوند برنامه نویس فرانت اند از تهران هستم برنامه نویسی رو به صورت خوداموز یادگرفتم ۴ سال تجربه کاری و تجربه کار در حوضه وب ۳ دارم
+      به صورت ریموت و حضوری روی پروژه های مختلف کار کردم و علاقه مند به یادگیری مطالب جدید
            و همیشه سعی میکنم بهترین کار رو انجام بدم و عاشق چالش های مختلف سخت`,
     },
     ProjectPage: {

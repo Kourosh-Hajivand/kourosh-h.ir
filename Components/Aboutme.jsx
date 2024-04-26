@@ -1,3 +1,5 @@
+/** @format */
+
 import Image from "next/image";
 import React from "react";
 import HeroButtonBackground from "../public/HeroB.png";
@@ -109,7 +111,7 @@ function Aboutme() {
             </div>
             <div className="bgSkill relative ">
               <h1 className="font-RubikSemiBold   absolute -top-8 font-semibold ">
-                Web3
+                React Native
               </h1>
               <div
                 data-aos=""
